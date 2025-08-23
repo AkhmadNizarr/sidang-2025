@@ -13,14 +13,14 @@
         <h2>Edit Data</h2>
         <table>
             <?php
-            $id     = $_POST['id'];
-            $sql    = mysqli_query($koneksi, "SELECT * FROM pegawai WHERE id='$id'");
+            $id_pegawai     = $_POST['id_pegawai'];
+            $sql    = mysqli_query($koneksi, "SELECT * FROM pegawai WHERE id_pegawai='$id_pegawai'");
             while ($data = mysqli_fetch_array($sql)) {
             ?>
                 <form action="<?= $folder; ?>/proses.php" method="post">
                     <tr>
                         <td>Nama</td>
-                        <td><input type="text" name="nama" value="<?= $data['nama']; ?>"></td>
+                        <td><input type="text" name="nama_pegawai" value="<?= $data['nama_pegawai']; ?>"></td>
                     </tr>
                     <tr>
                         <td>Gender</td>
@@ -42,7 +42,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="hidden" name="id" value="<?= $id; ?>">
+                            <input type="hidden" name="id_pegawai" value="<?= $id_pegawai; ?>">
                             <button type="submit" name="edit">SIMPAN</button>
                         </td>
                     </tr>

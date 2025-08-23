@@ -32,7 +32,7 @@
             ?>
                 <tbody>
                     <td><?= $no++; ?></td>
-                    <td><?= $data['nama']; ?></td>
+                    <td><?= $data['nama_pegawai']; ?></td>
                     <td><?= $data['jenis_kelamin']; ?></td>
                     <td><?= $data['jabatan']; ?></td>
                     <td><?= $data['alamat']; ?></td>

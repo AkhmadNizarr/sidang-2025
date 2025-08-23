@@ -32,13 +32,13 @@
             ?>
                 <tbody>
                     <td><?= $no++; ?></td>
-                    <td><?= $data['nama']; ?></td>
+                    <td><?= $data['nama_pegawai']; ?></td>
                     <td><?= $data['jenis_kelamin']; ?></td>
                     <td><?= $data['jabatan']; ?></td>
                     <td><?= $data['alamat']; ?></td>
                     <td>
                         <form action="" method="post">
-                            <input type="hidden" name="id" value="<?= $data['id']; ?>">
+                            <input type="hidden" name="id_pegawai" value="<?= $data['id_pegawai']; ?>">
                             <button name="edit">EDIT</button>
                             <button name="hapus" onclick="return confirm('Yakin Ingin Menghapus Data?')">HAPUS</button>
                         </form>

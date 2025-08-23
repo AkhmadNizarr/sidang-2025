@@ -1,4 +1,4 @@
 <?php
-$id = $_POST['id'];
-mysqli_query($koneksi, "DELETE FROM pegawai WHERE id='$id'");
+$id_pegawai = $_POST['id_pegawai'];
+mysqli_query($koneksi, "DELETE FROM pegawai WHERE id_pegawai='$id_pegawai'");
 header('location: index.php');

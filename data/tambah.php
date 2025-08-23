@@ -15,7 +15,7 @@
             <form action="<?= $folder; ?>/proses.php" method="post">
                 <tr>
                     <td>Nama Pegawai</td>
-                    <td><input type="text" name="nama"></td>
+                    <td><input type="text" name="nama_pegawai"></td>
                 </tr>
                 <tr>
                     <td>Jenis Kelamin</td>
